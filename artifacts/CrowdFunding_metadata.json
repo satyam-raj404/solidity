@@ -55,6 +55,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "manager",
 				"outputs": [
 					{
@@ -107,6 +120,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "sedEth",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "target",
 				"outputs": [
 					{
@@ -147,10 +167,10 @@
 	},
 	"sources": {
 		"crowd_funding.sol": {
-			"keccak256": "0x2c3c2d05cdd5f4b78f09e6071574f6d3288ea5cd2e445c005cb7ba56aeff20aa",
+			"keccak256": "0x167623529e3b7dfe9e20be9b9aa15fd867ce4066b0a9311f5bacf1dd97633c52",
 			"urls": [
-				"bzz-raw://290aa0b0d54309619bcd3260ed57616c3f7533bfdd25936b0b0082287f436203",
-				"dweb:/ipfs/QmRctCWgVMyidBrrM6rAjDcC5G7YGTSCDqUji8ACw1rWrK"
+				"bzz-raw://f47e15bac0633ce96e7f6325077e3244109729a2f9a3012889571b2999a9abff",
+				"dweb:/ipfs/QmbWZFQsF4DJpW3DSaA6E5sDcyam4YD5G95ouzP2ahdVk5"
 			]
 		}
 	},
