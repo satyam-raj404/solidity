@@ -34,4 +34,12 @@ contract CrowdFunding{
     function getContractBalance() public view returns(uint){
         return address(this).balance;
     }
+
+    function refund() public{
+        require(block.timestamp>deadline && raisedAmount<target,"you are not eligible for refund");
+        require(contributers[msg.sender]>0);//to check if the refund requested by the user has actually contributed
+        address payable user=payable(msg.sender);//msg.sender is made payable so that ethers can be transferred there
+        user.transfer(contributers[msg.sender]);
+        contributers[msg.sender]=0;
+    }
 }

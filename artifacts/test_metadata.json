@@ -8,7 +8,22 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "age",
+				"name": "getChoice",
+				"outputs": [
+					{
+						"internalType": "enum test.FreshJuiceSize",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getDefaultChoice",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -17,13 +32,13 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"constant": false,
 				"inputs": [],
-				"name": "setAge",
+				"name": "setLarge",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -39,7 +54,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"payable.sol": "State"
+			"enums.sol": "test"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -50,11 +65,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"payable.sol": {
-			"keccak256": "0x19e160f4d8513ded07533fb89bd1f6ad84a6ae419b83f60ae29d61ad94be6b06",
+		"enums.sol": {
+			"keccak256": "0xc85c2368ed057fa41c4207ea527af7ce2bd0b7454b3b434d88ae96e029fba88a",
 			"urls": [
-				"bzz-raw://896240904724ffd03f43efba983a03007b7aed83ff753fcac57234fb1bc0bb80",
-				"dweb:/ipfs/QmdDNJGqUUsD57mAL5QXVi32prEACh9QiKztow9h6NE7Qu"
+				"bzz-raw://e1f97f518706d65ec49fad75a10b1f2bf85fcc6e9d6c036e816aa4934bcb29bc",
+				"dweb:/ipfs/QmRhK9RzbFLHeiGPW8kMBFHqA2Q4MieoXtLfC2wV6EGQBp"
 			]
 		}
 	},
