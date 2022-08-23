@@ -1,6 +1,19 @@
 // SPDX-Licence-Identifier: GPL-3.0
 pragma solidity ^0.5.0;
 
+contract array
+{
+   string[] public myarray;
+
+   function test() public{
+      myarray.push("hi");
+   }
+   function getarray() public view returns (string[]){
+      return myarray;
+   }
+}
+
+/*
 contract test {
    function testArray() public pure{
       uint len = 7; 
@@ -24,4 +37,6 @@ contract test {
       uint[3] memory c = [uint(1) , 2, 3];
       assert(c.length == 3);
    }
+   }
 }
+*/

@@ -1,25 +1,35 @@
 // SPDX-Licence-Identifier: GPL-3.0
 
-pragma solidity >= 0.5.0 < 0.9.0;
+pragma solidity ^0.5.0;
 
-contract Identity 
-{
-    string name;
-    uint age;
-
-    constructor() public 
-    {
-        name="Ravi";
-        age=17;
-    }
-
-    function getName() view public returns(string memory)
-    {
-        return name;
-    }
-
-    function getAge() view public returns(uint)
-    {
-        return age;
-    }
+///////////
+contract C {
+   uint public data = 30;
+   uint internal iData= 10;
+   uint storedData;
+   
+   function x() public returns (uint) {
+      data = 3; // internal access
+      return data;
+   }
+}
+//////////
+contract Caller {
+   C c = new C();
+   function f() public view returns (uint) {
+      return c.data(); //external access
+   }
+}
+///////////
+contract D is C {
+   function y() public returns (uint) {
+      iData = 3; // internal access
+      return iData;
+   }
+   function getResult() public view returns(uint){
+      uint a = 1; // local variable
+      uint b = 2;
+      uint result = a + b;
+      return storedData; //access the state variable
+   }
 }

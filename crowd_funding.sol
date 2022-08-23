@@ -3,7 +3,7 @@
 pragma solidity >= 0.5.0 < 0.9.0;
 
 contract CrowdFunding{
-    mapping(address=>uint) public contributers;
+    mapping(address=>uint) public contributers; 
     address public manager;
     uint public deadline;
     uint public target;
@@ -38,8 +38,9 @@ contract CrowdFunding{
     function refund() public{
         require(block.timestamp>deadline && raisedAmount<target,"you are not eligible for refund");
         require(contributers[msg.sender]>0);//to check if the refund requested by the user has actually contributed
-        address payable user=payable(msg.sender);//msg.sender is made payable so that ethers can be transferred there
+        address payable user = payable(msg.sender); 
         user.transfer(contributers[msg.sender]);
         contributers[msg.sender]=0;
     }
+ 
 }

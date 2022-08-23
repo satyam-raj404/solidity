@@ -1,16 +1,18 @@
 {
 	"compiler": {
-		"version": "0.8.4+commit.c7e474f2"
+		"version": "0.5.17+commit.d19bba13"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "getAge",
 				"outputs": [
@@ -20,10 +22,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "getName",
 				"outputs": [
@@ -33,19 +37,16 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"kind": "dev",
-			"methods": {},
-			"version": 1
+			"methods": {}
 		},
 		"userdoc": {
-			"kind": "user",
-			"methods": {},
-			"version": 1
+			"methods": {}
 		}
 	},
 	"settings": {
@@ -54,9 +55,6 @@
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
-		"metadata": {
-			"bytecodeHash": "ipfs"
-		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -65,10 +63,10 @@
 	},
 	"sources": {
 		"visibilty.sol": {
-			"keccak256": "0xe8e1c2219b53f6239d7c6a6f35c60f735bb989b9d5dfca7615b5e1c85e07692f",
+			"keccak256": "0x2fc6dbc128df102dd5a1f8c49da7ed106a8568f8d0ab691445afe2f2d5ae3780",
 			"urls": [
-				"bzz-raw://ad73e4fe63dfd8f6b478a583d2ae90a783a411f147647db345cb7b18026297c3",
-				"dweb:/ipfs/QmXkgmVhPS1L8JHgF5oTHqHLtZKY9cqyc49q2VJPhQoxKj"
+				"bzz-raw://dd17ec7694490f448d8c293c7da0e8c0c9dda2f3f2328d64e2b29622cb755681",
+				"dweb:/ipfs/QmYE9j58bzfjGfnVzQj1sjxjAnYsnyqc1mxieSoiKmc5cF"
 			]
 		}
 	},

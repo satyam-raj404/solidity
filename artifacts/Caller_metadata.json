@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "f",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {},
+			"notice": "///////"
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"visibilty.sol": "Caller"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"visibilty.sol": {
+			"keccak256": "0x4709d346998b02a9e0d2198be9913afa4817b6e6af9c2d023b8bf618844de47f",
+			"urls": [
+				"bzz-raw://ed2160e07b59fe57a68b9f9cb0d35c0a8d7e403df6f8b9e5f9ce1979462206c6",
+				"dweb:/ipfs/QmU7Ao945PvFtfvXYCfQdkfQ98n4qWHXdmNKTmcG16VwE2"
+			]
+		}
+	},
+	"version": 1
+}
